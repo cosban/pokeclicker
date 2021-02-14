@@ -35,7 +35,7 @@ abstract class Quest {
 
     public static randomizeReward(pointsReward: number) {
         const randomPointBonus = 0.9 + SeededRand.next() * 0.2; // random between 0.9 and 1.1
-        return Math.ceil(pointsReward * randomPointBonus);
+        return Math.max(250, Math.ceil(pointsReward * randomPointBonus));
     }
 
     get xpReward(): number {
@@ -96,7 +96,7 @@ abstract class Quest {
     protected createProgressObservables() {
         this.progress = ko.pureComputed(() => {
             if (this.initial() !== null) {
-                return Math.min(1, ( this.focus() - this.initial()) / this.amount);
+                return Math.min(1, (this.focus() - this.initial()) / this.amount);
             } else {
                 return 0;
             }
@@ -153,7 +153,7 @@ abstract class Quest {
         return {
             index: this.index || 0,
             customDescription: this.customDescription,
-            data: <any[]>[this.amount ,this.pointsReward],
+            data: <any[]>[this.amount, this.pointsReward],
             initial: this.initial(),
             claimed: this.claimed(),
             notified: this.notified,
