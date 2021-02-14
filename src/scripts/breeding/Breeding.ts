@@ -295,7 +295,7 @@ class Breeding implements Feature {
 
     public createTypedEgg(type: EggType): Egg {
         const hatchList = this.hatchList[type];
-        const possibleHatches = hatchList[player.region()].filter(list => list.length);
+        const possibleHatches = hatchList[player.region].filter(list => list.length);
 
         const pokemon = GameConstants.randomElement(possibleHatches);
         return this.createEgg(pokemon, type);

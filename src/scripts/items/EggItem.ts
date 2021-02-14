@@ -16,7 +16,7 @@ class EggItem extends CaughtIndicatingItem {
 
         let success: boolean;
         if (this.type === GameConstants.EggItemType.Pokemon_egg) {
-            success = App.game.breeding.gainPokemonEgg(pokemonMap.randomRegion(player.region(), player.region()));
+            success = App.game.breeding.gainPokemonEgg(pokemonMap.randomRegion(player.region, player.region));
         } else if (this.type === GameConstants.EggItemType.Mystery_egg) {
             success = App.game.breeding.gainRandomEgg();
         } else {
