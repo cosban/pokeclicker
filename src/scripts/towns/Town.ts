@@ -62,6 +62,18 @@ const pokeMartShop = new Shop([
     ItemList['Ultraball'],
     ItemList['xAttack'],
     ItemList['xClick'],
+    ItemList['Dragon_egg'],
+    ItemList['Electric_egg'],
+    ItemList['Fighting_egg'],
+    ItemList['Grass_egg'],
+    ItemList['Fire_egg'],
+    ItemList['Mystery_egg'],
+    ItemList['Fire_stone'],
+    ItemList['Leaf_stone'],
+    ItemList['Moon_stone'],
+    ItemList['Thunder_stone'],
+    ItemList['Trade_stone'],
+    ItemList['Water_stone'],
     ItemList['Lucky_egg'],
     ItemList['Item_magnet'],
     ItemList['Token_collector'],
@@ -269,7 +281,7 @@ TownList['Viridian Forest'] = new DungeonTown(
 TownList['Mt. Moon'] = new DungeonTown(
     'Mt. Moon',
     GameConstants.Region.kanto,
-    [new RouteKillRequirement(10, GameConstants.Region.kanto,3)]
+    [new RouteKillRequirement(10, GameConstants.Region.kanto, 3)]
 );
 TownList['Digletts Cave'] = new DungeonTown(
     'Digletts Cave',
@@ -613,7 +625,7 @@ const EverGrandeCityShop = new Shop([
 // TODO: finalize items and prices
 const BattleFrontierShop = new Shop([
     new PokeballItem(GameConstants.Pokeball.Ultraball, 1, GameConstants.Currency.battlePoint),
-    new PokeballItem(GameConstants.Pokeball.Masterball, 500, GameConstants.Currency.battlePoint , { multiplier: 1.35, multiplierDecrease: false, saveName: `${GameConstants.Pokeball[GameConstants.Pokeball.Masterball]}|${GameConstants.Currency[GameConstants.Currency.battlePoint]}` }),
+    new PokeballItem(GameConstants.Pokeball.Masterball, 500, GameConstants.Currency.battlePoint, { multiplier: 1.35, multiplierDecrease: false, saveName: `${GameConstants.Pokeball[GameConstants.Pokeball.Masterball]}|${GameConstants.Currency[GameConstants.Currency.battlePoint]}` }),
     new EnergyRestore(GameConstants.EnergyRestoreSize.SmallRestore, 10, GameConstants.Currency.battlePoint),
     new EnergyRestore(GameConstants.EnergyRestoreSize.MediumRestore, 20, GameConstants.Currency.battlePoint),
     new EnergyRestore(GameConstants.EnergyRestoreSize.LargeRestore, 40, GameConstants.Currency.battlePoint),
@@ -929,7 +941,7 @@ const VeilstoneCityShop = new Shop([
 const CelesticTownShop = new Shop([
     ItemList['Dragon_egg'],
 ]);
-const CanalaveCityShop = new Shop ([
+const CanalaveCityShop = new Shop([
     ItemList['Fighting_egg'],
 ]);
 const PalParkShop = new Shop([
@@ -1412,7 +1424,7 @@ TownList['Driftveil City'] = new Town(
     GameConstants.Region.unova,
     {
         requirements: [
-            new RouteKillRequirement(10, GameConstants.Region.unova,5),
+            new RouteKillRequirement(10, GameConstants.Region.unova, 5),
             new GymBadgeRequirement(BadgeEnums.Bolt),
         ],
         shop: DriftveilCityShop,
