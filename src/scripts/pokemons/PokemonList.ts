@@ -10,29 +10,29 @@
 const pokemonBabyPrevolutionMap: { [name: string]: PokemonNameType } = {};
 
 type PokemonListData = {
-  id: number;
-  name: string;
-  nativeRegion?: GameConstants.Region;
-  catchRate: number;
-  evolutions?: Evolution[];
-  type: PokemonType[];
-  base: {
-    hitpoints: number;
-    attack: number;
-    specialAttack: number;
-    defense: number;
-    specialDefense: number;
-    speed: number;
-  };
-  levelType: LevelType;
-  exp: number;
-  eggCycles: number;
-  baby?: boolean;
-  attack?: number;
-  heldItem?: BagItem;
+    id: number;
+    name: string;
+    nativeRegion?: GameConstants.Region;
+    catchRate: number;
+    evolutions?: Evolution[];
+    type: PokemonType[];
+    base: {
+        hitpoints: number;
+        attack: number;
+        specialAttack: number;
+        defense: number;
+        specialDefense: number;
+        speed: number;
+    };
+    levelType: LevelType;
+    exp: number;
+    eggCycles: number;
+    baby?: boolean;
+    attack?: number;
+    heldItem?: BagItem;
 }
 
-function createPokemonArray<T extends readonly PokemonListData[] & Array<{name: V}>, V extends string>(...args: T) {
+function createPokemonArray<T extends readonly PokemonListData[] & Array<{ name: V }>, V extends string>(...args: T) {
     return args;
 }
 
@@ -883,7 +883,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 35,
         },
-        'heldItem': {type: ItemType.item, id: 'Moon_stone'},
+        'heldItem': { type: ItemType.item, id: 'Moon_stone' },
     },
     {
         'id': 36,
@@ -901,7 +901,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 90,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.item, id: 'Moon_stone'},
+        'heldItem': { type: ItemType.item, id: 'Moon_stone' },
     },
     {
         'id': 37,
@@ -1475,7 +1475,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 50,
             'speed': 90,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 62,
@@ -1493,7 +1493,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 90,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 63,
@@ -1706,7 +1706,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 30,
             'speed': 20,
         },
-        'heldItem': {type: ItemType.underground, id: 'Everstone'},
+        'heldItem': { type: ItemType.underground, id: 'Everstone' },
     },
     {
         'id': 74.01,
@@ -1744,7 +1744,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 45,
             'speed': 35,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 75.01,
@@ -1781,7 +1781,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 45,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 76.01,
@@ -1911,7 +1911,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 40,
             'speed': 15,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 80,
@@ -1929,7 +1929,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 80,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 80.1,
@@ -1966,7 +1966,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 45,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 82,
@@ -1988,7 +1988,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 70,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 83,
@@ -2273,7 +2273,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 45,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 96,
@@ -2452,7 +2452,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 50,
             'speed': 35,
         },
-        'heldItem': {type: ItemType.underground, id: 'Rare Bone'},
+        'heldItem': { type: ItemType.underground, id: 'Rare Bone' },
     },
     {
         'id': 105,
@@ -2470,7 +2470,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 80,
             'speed': 45,
         },
-        'heldItem': {type: ItemType.underground, id: 'Rare Bone'},
+        'heldItem': { type: ItemType.underground, id: 'Rare Bone' },
     },
     {
         'id': 105.01,
@@ -2666,7 +2666,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 105,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.underground, id: 'Oval Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Oval Stone' },
     },
     {
         'id': 114,
@@ -2720,7 +2720,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 25,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 117,
@@ -2739,7 +2739,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 45,
             'speed': 85,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 118,
@@ -2899,7 +2899,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 85,
             'speed': 105,
         },
-        'heldItem': {type: ItemType.item, id: 'Electirizer'},
+        'heldItem': { type: ItemType.item, id: 'Electirizer' },
     },
     {
         'id': 126,
@@ -2918,7 +2918,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 85,
             'speed': 93,
         },
-        'heldItem': {type: ItemType.item, id: 'Magmarizer'},
+        'heldItem': { type: ItemType.item, id: 'Magmarizer' },
     },
     {
         'id': 127,
@@ -3037,7 +3037,7 @@ const pokemonList = createPokemonArray(
             new StoneEvolution('Eevee', 'Flareon', GameConstants.StoneType.Fire_stone),
             new DayTimedStoneEvolution('Eevee', 'Espeon', GameConstants.StoneType.Soothe_bell),
             new NightTimedStoneEvolution('Eevee', 'Umbreon', GameConstants.StoneType.Soothe_bell),
-            new DungeonRestrictedLevelEvolution('Lake Acuity','Eevee','Glaceon', 20),
+            new DungeonRestrictedLevelEvolution('Lake Acuity', 'Eevee', 'Glaceon', 20),
             new DungeonRestrictedLevelEvolution('Eterna Forest', 'Eevee', 'Leafeon', 20),
         ],
         'base': {
@@ -3344,7 +3344,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 50,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 148,
@@ -3363,7 +3363,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 70,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 149,
@@ -3381,7 +3381,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 80,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 150,
@@ -3416,7 +3416,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.berry, id: BerryType.Lum},
+        'heldItem': { type: ItemType.berry, id: BerryType.Lum },
     },
     {
         'id': 152,
@@ -3751,7 +3751,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 56,
             'speed': 67,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_scale'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_scale' },
     },
     {
         'id': 171,
@@ -3769,7 +3769,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 76,
             'speed': 67,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_scale'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_scale' },
     },
     {
         'id': 172,
@@ -3808,7 +3808,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 15,
         },
-        'heldItem': {type: ItemType.item, id: 'Moon_stone'},
+        'heldItem': { type: ItemType.item, id: 'Moon_stone' },
     },
     {
         'id': 174,
@@ -4038,7 +4038,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 187,
@@ -4267,7 +4267,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 110,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 199.1,
@@ -4901,7 +4901,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 209,
@@ -5146,7 +5146,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 95,
             'speed': 35,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 222.1,
@@ -5252,7 +5252,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 70,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 228,
@@ -5305,7 +5305,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 95,
             'speed': 85,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 231,
@@ -5359,7 +5359,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 95,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.item, id: 'Upgrade'},
+        'heldItem': { type: ItemType.item, id: 'Upgrade' },
     },
     {
         'id': 234,
@@ -5472,7 +5472,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 95,
         },
-        'heldItem': {type: ItemType.item, id: 'Electirizer'},
+        'heldItem': { type: ItemType.item, id: 'Electirizer' },
     },
     {
         'id': 240,
@@ -5492,7 +5492,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 83,
         },
-        'heldItem': {type: ItemType.item, id: 'Magmarizer'},
+        'heldItem': { type: ItemType.item, id: 'Magmarizer' },
     },
     {
         'id': 241,
@@ -5527,7 +5527,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 135,
             'speed': 55,
         },
-        'heldItem': {type: ItemType.underground, id: 'Oval Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Oval Stone' },
     },
     {
         'id': 243,
@@ -5683,7 +5683,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.berry, id: BerryType.Lum},
+        'heldItem': { type: ItemType.berry, id: BerryType.Lum },
     },
     {
         'id': 252,
@@ -5896,7 +5896,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 41,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.underground, id: 'Revive'},
+        'heldItem': { type: ItemType.underground, id: 'Revive' },
     },
     {
         'id': 263.1,
@@ -5933,7 +5933,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 61,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.underground, id: 'Max Revive'},
+        'heldItem': { type: ItemType.underground, id: 'Max Revive' },
     },
     {
         'id': 264.1,
@@ -6542,7 +6542,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 60,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 298,
@@ -6583,7 +6583,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 90,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 300,
@@ -6653,7 +6653,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.underground, id: 'Iron Ball'},
+        'heldItem': { type: ItemType.underground, id: 'Iron Ball' },
     },
     {
         'id': 304,
@@ -6672,7 +6672,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 40,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 305,
@@ -6691,7 +6691,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 50,
             'speed': 40,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 306,
@@ -6709,7 +6709,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 60,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 307,
@@ -6919,7 +6919,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 20,
             'speed': 65,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_tooth'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_tooth' },
     },
     {
         'id': 319,
@@ -6937,7 +6937,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 40,
             'speed': 95,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_tooth'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_tooth' },
     },
     {
         'id': 320,
@@ -7251,7 +7251,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 85,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Moon_stone'},
+        'heldItem': { type: ItemType.item, id: 'Moon_stone' },
     },
     {
         'id': 338,
@@ -7269,7 +7269,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Sun_stone'},
+        'heldItem': { type: ItemType.item, id: 'Sun_stone' },
     },
     {
         'id': 339,
@@ -7835,7 +7835,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 75,
             'speed': 52,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_tooth'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_tooth' },
     },
     {
         'id': 368,
@@ -7853,7 +7853,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 75,
             'speed': 52,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_scale'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_scale' },
     },
     {
         'id': 369,
@@ -7871,7 +7871,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 55,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_scale'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_scale' },
     },
     {
         'id': 370,
@@ -7889,7 +7889,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 97,
         },
-        'heldItem': {type: ItemType.underground, id: 'Heart Scale'},
+        'heldItem': { type: ItemType.underground, id: 'Heart Scale' },
     },
     {
         'id': 371,
@@ -7908,7 +7908,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 30,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 372,
@@ -7927,7 +7927,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 50,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 373,
@@ -7945,7 +7945,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 80,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.item, id: 'Dragon_scale'},
+        'heldItem': { type: ItemType.item, id: 'Dragon_scale' },
     },
     {
         'id': 374,
@@ -7964,7 +7964,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 60,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 375,
@@ -7983,7 +7983,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 80,
             'speed': 50,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 376,
@@ -8001,7 +8001,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 90,
             'speed': 70,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 377,
@@ -8155,7 +8155,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.underground, id: 'Star Piece'},
+        'heldItem': { type: ItemType.underground, id: 'Star Piece' },
     },
     {
         'id': 386,
@@ -9239,7 +9239,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 86,
             'speed': 23,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 437,
@@ -9257,7 +9257,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 116,
             'speed': 33,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 438,
@@ -9326,7 +9326,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 65,
             'speed': 30,
         },
-        'heldItem': {type: ItemType.underground, id: 'Oval Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Oval Stone' },
     },
     {
         'id': 441,
@@ -9716,7 +9716,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 90,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.item, id: 'Metal_coat'},
+        'heldItem': { type: ItemType.item, id: 'Metal_coat' },
     },
     {
         'id': 463,
@@ -9785,7 +9785,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 85,
             'speed': 95,
         },
-        'heldItem': {type: ItemType.item, id: 'Electirizer'},
+        'heldItem': { type: ItemType.item, id: 'Electirizer' },
     },
     {
         'id': 467,
@@ -9803,7 +9803,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 95,
             'speed': 83,
         },
-        'heldItem': {type: ItemType.item, id: 'Magmarizer'},
+        'heldItem': { type: ItemType.item, id: 'Magmarizer' },
     },
     {
         'id': 468,
@@ -9957,7 +9957,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 150,
             'speed': 40,
         },
-        'heldItem': {type: ItemType.underground, id: 'Hard Stone'},
+        'heldItem': { type: ItemType.underground, id: 'Hard Stone' },
     },
     {
         'id': 477,
@@ -10335,7 +10335,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 100,
         },
-        'heldItem': {type: ItemType.berry, id: BerryType.Lum},
+        'heldItem': { type: ItemType.berry, id: BerryType.Lum },
     },
     {
         'id': 492.1,
@@ -11204,7 +11204,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 25,
             'speed': 15,
         },
-        'heldItem': {type: ItemType.underground, id: 'Everstone'},
+        'heldItem': { type: ItemType.underground, id: 'Everstone' },
     },
     {
         'id': 525,
@@ -11223,7 +11223,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 40,
             'speed': 20,
         },
-        'heldItem': {type: ItemType.underground, id: 'Everstone'},
+        'heldItem': { type: ItemType.underground, id: 'Everstone' },
     },
     {
         'id': 526,
@@ -11241,7 +11241,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 80,
             'speed': 25,
         },
-        'heldItem': {type: ItemType.underground, id: 'Everstone'},
+        'heldItem': { type: ItemType.underground, id: 'Everstone' },
     },
     {
         'id': 527,
@@ -11662,7 +11662,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 98,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_tooth'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_tooth' },
     },
     {
         'id': 550.01,
@@ -11680,7 +11680,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 55,
             'speed': 98,
         },
-        'heldItem': {type: ItemType.item, id: 'Deepsea_scale'},
+        'heldItem': { type: ItemType.item, id: 'Deepsea_scale' },
     },
     {
         'id': 551,
@@ -11876,7 +11876,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 35,
             'speed': 55,
         },
-        'heldItem': {type: ItemType.underground, id: 'Rare Bone'},
+        'heldItem': { type: ItemType.underground, id: 'Rare Bone' },
     },
     {
         'id': 558,
@@ -11894,7 +11894,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 75,
             'speed': 45,
         },
-        'heldItem': {type: ItemType.underground, id: 'Rare Bone'},
+        'heldItem': { type: ItemType.underground, id: 'Rare Bone' },
     },
     {
         'id': 559,
@@ -13709,7 +13709,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 128,
             'speed': 90,
         },
-        'heldItem': {type: ItemType.underground, id: 'Star Piece'},
+        'heldItem': { type: ItemType.underground, id: 'Star Piece' },
     },
     {
         'id': 648.1,
@@ -14885,7 +14885,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 63,
             'speed': 118,
         },
-        'heldItem': {type: ItemType.item, id: 'Kings_rock'},
+        'heldItem': { type: ItemType.item, id: 'Kings_rock' },
     },
     {
         'id': 702,
@@ -16366,7 +16366,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 100,
             'speed': 60,
         },
-        'heldItem': {type: ItemType.underground, id: 'Star Piece'},
+        'heldItem': { type: ItemType.underground, id: 'Star Piece' },
     },
     {
         'id': 774.01,
@@ -16605,7 +16605,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 70,
             'speed': 92,
         },
-        'heldItem': {type: ItemType.item, id: 'Razor_fang'},
+        'heldItem': { type: ItemType.item, id: 'Razor_fang' },
     },
     {
         'id': 780,
@@ -16658,7 +16658,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 45,
             'speed': 45,
         },
-        'heldItem': {type: ItemType.item, id: 'Razor_claw'},
+        'heldItem': { type: ItemType.item, id: 'Razor_claw' },
     },
     {
         'id': 783,
@@ -16677,7 +16677,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 70,
             'speed': 65,
         },
-        'heldItem': {type: ItemType.item, id: 'Razor_claw'},
+        'heldItem': { type: ItemType.item, id: 'Razor_claw' },
     },
     {
         'id': 784,
@@ -16695,7 +16695,7 @@ const pokemonList = createPokemonArray(
             'specialDefense': 105,
             'speed': 85,
         },
-        'heldItem': {type: ItemType.item, id: 'Razor_claw'},
+        'heldItem': { type: ItemType.item, id: 'Razor_claw' },
     },
     {
         'id': 784.01,

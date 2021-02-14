@@ -30,7 +30,7 @@ class Breeding implements Feature {
         this.queueSlots = ko.observable(this.defaults.queueSlots);
 
         this._eggList.forEach((egg) => {
-            egg.extend({deferred: true});
+            egg.extend({ deferred: true });
         });
         BreedingController.filter.category(Settings.getSetting('breedingCategoryFilter').value);
         BreedingController.filter.region(Settings.getSetting('breedingRegionFilter').value);
@@ -191,7 +191,7 @@ class Breeding implements Feature {
         amount *= this.getStepMultiplier();
 
         amount = Math.round(amount);
-        let index =  this.eggList.length;
+        let index = this.eggList.length;
         while (index-- > 0) {
             const egg = this.eggList[index]();
             egg.addSteps(amount, this.multiplier);
@@ -295,12 +295,7 @@ class Breeding implements Feature {
 
     public createTypedEgg(type: EggType): Egg {
         const hatchList = this.hatchList[type];
-        const hatchable = hatchList.slice(0, player.highestRegion() + 1).filter(list => list.length);
-
-        // highest region has 1/ratio chance, next highest has 1/(ratio ^ 2), etc.
-        // Leftover is given to Kanto, making Kanto and Johto equal chance
-        const ratio = 2;
-        const possibleHatches = GameConstants.expRandomElement(hatchable, ratio);
+        const possibleHatches = hatchList[player.region()].filter(list => list.length);
 
         const pokemon = GameConstants.randomElement(possibleHatches);
         return this.createEgg(pokemon, type);
